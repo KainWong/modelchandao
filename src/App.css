@@ -1,7 +1,26 @@
-.App {
-  text-align: center;
+input {
+  outline: none;
+  border: none;
 }
 
+.App {
+  text-align: center;
+  background-color: #efefef;
+  height: 100%
+}
+.App .App-header h1 {
+    float: left;
+    max-width: 250px;
+    margin: 0;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: inherit;
+    text-decoration: inherit;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -9,25 +28,68 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: linear-gradient(to right,#1183fb,#0a48d1); 
+  height: 50px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-list {
+  display: flex;
+  list-style: none;
+}
+
+.header-list li {
+  line-height: 30px;
+  color: #fff;
+  border-radius: 0;
+  opacity: .9;
+}
+
+.inactive-li {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.inactive-li:hover {
+  background: rgba(0,0,0,.1);
+}
+
+.active-li {
+  padding: 10px 15px;
+  font-weight: 700;
+  background: rgba(0,0,0,.1);
+  cursor: pointer;
+}
+
+.li-bar {
+  display: block;
+  width: 2px;
+  height: 20px;
+  margin: 15px;
+  background: rgba(255,255,255,.4);
+  padding: 0px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-input {
+  background: rgba(255, 255, 255, 0.157);
+  width: 70px;
+  padding: 1px 2px;
+  text-align: center;
+  margin-right: 0;
+}
+
+.mini-header {
+  color: #fff;
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+  height: 45px;
 }
