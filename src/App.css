@@ -1,3 +1,7 @@
+a {
+  text-decoration:none
+}
+
 input {
   outline: none;
   border: none;
@@ -87,9 +91,38 @@ input {
 }
 
 .mini-header {
-  color: #fff;
-  margin-top: 5px;
+  background: #fff;
+  /* margin-top: 5px; */
   font-size: 14px;
   text-align: center;
   height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-list {
+  list-style: none;
+  display: inline;
+  padding: 8px 12px;
+  line-height: 24px;
+  color: #3c4353;
+}
+
+.mini-list:hover {
+  cursor: pointer;
+  background: rgba(0,0,0,0.1);
+}
+
+.mini-bar {
+  list-style: none;
+  width: 2px;
+  height: 20px;
+  margin: 9px 5px;
+  background-color: rgba(0,0,0,.05);
+}
+
+.mini-active-li {
+  font-weight: 700;
+  color: #0c64eb;
 }
