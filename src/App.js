@@ -10,6 +10,7 @@ export default class App extends React.Component{
     super(props);
     this.state = {
       headIndex: 0,
+      userName: '王坤',
       headerList : [
         {
           name: '我的地盘',
@@ -142,7 +143,7 @@ export default class App extends React.Component{
               <input className="search-input"/>
               <a style={{background: 'rgba(106, 154, 253,0.5)',padding: '0 3px'}}>GO!</a>
             </div>
-            <div>王坤</div>
+            <div>{this.state.userName}</div>
           </div>
         </header>
         <div className="mini-header">

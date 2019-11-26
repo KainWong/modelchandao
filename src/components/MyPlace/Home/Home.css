@@ -1,0 +1,12 @@
+.BriefPart .part1 {
+    line-height: 20px;
+    color: #3c4353;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: right;
+}
+
+.BriefPart .part1:hover {
+    
+}
